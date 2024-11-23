@@ -1,0 +1,16 @@
+﻿@model WebApplicationTask11.Models.CalculatorViewModel
+
+<h1>PassUsingModel</h1>
+
+<p><b>Rand Value First:</b> @Model.Number1</p>
+<p><b>Rand Value Second:</b> @Model.Number2</p>
+
+<p><b>Add:</b>  @Model.Number1 + @Model.Number2 = @Model.Sum</p>
+<p><b>Sub:</b>  @Model.Number1 - @Model.Number2 = @Model.Difference</p>
+<p><b>Mult:</b>  @Model.Number1 * @Model.Number2 = @Model.Product</p>
+<p><b>Div:</b> @Model.Number1 / @Model.Number2 = @Model.Quotient</p>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}

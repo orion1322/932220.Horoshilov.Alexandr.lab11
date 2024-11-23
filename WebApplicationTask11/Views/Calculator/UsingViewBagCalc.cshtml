@@ -1,0 +1,15 @@
+﻿﻿<h1>PassUsingViewBag</h1>
+
+<p><b>Rand Value First:</b> @ViewData["Number1"]</p>
+<p><b>Rand Value Second:</b> @ViewData["Number2"]</p>
+
+<p><b>Add:</b> @ViewData["Number1"] + @ViewData["Number2"] = @ViewData["Sum"]</p>
+<p><b>Sub:</b> @ViewData["Number1"] - @ViewData["Number2"] = @ViewData["Difference"]</p>
+<p><b>Mult:</b> @ViewData["Number1"] * @ViewData["Number2"] = @ViewData["Product"]</p>
+<p><b>Div:</b> @ViewData["Number1"] / @ViewData["Number2"] = @ViewData["Quotient"]</p>
+
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}
